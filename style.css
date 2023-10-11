@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+body {
+    padding: 0 20px;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    max-width: 800px;
+    justify-content: space-between;
+    padding: 30px 0;
+    /* background-color: rgb(155,210,242); */
+}
+
+nav ul {
+    display: flex;
+    /* width: 50%;
+    justify-content: space-around ; */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.about-me {
+    display: flex;
+}
+
+
+.pic-about-me {
+    width: 30%;
+}
+
+.text-about-me {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.pic-about-me img {
+    width: 100%;
+    height: auto;
+}
+
+.text-about-me p {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-me {
+        flex-direction: column;
+    }
+    .pic-about-me {
+        width: 100%;
+        max-width: 211.5px;
+    }
+    .text-about-me {
+        width: 100%;
+        padding-right: 20px;
+    }
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.projects h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.projects img {
+    max-width: 600px;
+    border: 1px solid black;
+    display: none;
+}
+
+.projects p {
+    margin: 20px 0 30px 0;
+    display: none;
+    max-width: 600px;
+}
+
+.projects img.visible {
+    display: block;
+}
+
+.projects p.visible {
+    display: block;
+}
+
+.fa-brands {
+    margin-right: 10px;
+}
+
+.skills {
+    margin-bottom: 60px;
+}
+
+.fa-regular {
+    margin: 0 5px;
+}
+
+footer {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 3px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+main.contacts {
+    margin-top: 30px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contacts div {
+    margin-top: 30px;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Rubik', sans-serif; */
